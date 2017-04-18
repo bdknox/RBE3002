@@ -41,13 +41,20 @@ class TurtleBot(object):
 		self.hopeful = [0,0,0]
 
 		self.pub = rospy.Publisher('cmd_vel_mux/input/teleop', Twist, None, queue_size=10)
-		self.goal_sub = rospy.Subscriber('move_base_simple/goal', PoseStamped, self.doAstar, queue_size=1)
+		self.goal_sub = rospy.Subscriber('goal_pose', PoseStamped, self.executeAStar, queue_size=1)
 		#self.bump_sub = rospy.Subscriber('mobile_base/events/bumper', BumperEvent, self.readBumper, queue_size=1)
-		self.odom_sub = rospy.Subscriber('/odom', Odometry, self.readOdom)
-		self.odom_lis = tf.TransformListener()
-		self.odom_bro = tf.TransformBroadcaster()
+		self.odom_sub = rospy.Subscriber('/odom', Odometry, self.detOdometry)
+		self.odom_tfList = tf.TransformListener()
+		self.odom_broad = tf.TransformBroadcaster()
 
 		print 'Completed making Turtlebot'
+
+	def executeAStar(self, msg):
+		astart = aStar.aStar()
+		time.sleep(.25)
+		astart.run(self.pose.position, msg.pose.position)
+		path = astart.getPoints()
+
 
 	#drive to a goal subscribed as /move_base_simple/goal
 	def navToPose(goal):
@@ -84,26 +91,25 @@ class TurtleBot(object):
 
 
 	#This function accepts a speed and a distance for the robot to move in a straight line
-	def driveStraight(speed, distance):
-		global pose
-		curPose = pose
+	def driveStraight(self, speed, distance):
+		curPose = self.pose
 
 		atTarget = False
 		while (not atTarget and not rospy.is_shutdown()):
 			curDist = math.sqrt((curPose.position.x - pose.position.x)**2 + (curPose.position.y - pose.position.y)**2)
+			scaler = (distance - curDist)*.1
 			print curDist
 			rospy.sleep(rospy.Duration(.01, 0))
 			if (curDist >= distance):
-				print "Made it!"
 				atTarget = True
 				publishTwist(0,0)
 			else:
-				publishTwist(speed, 0)
+				publishTwist(scaler*speed, 0)
 
+	def stopRobot(self):
+		self.pub.publish(Robot.stop_msg)
+		return True
 
-
-
-	    
 	#Accepts an angle and makes the robot rotate around it.
 	def rotate(angle):
 		global pub
@@ -130,17 +136,11 @@ class TurtleBot(object):
 
 	    #Use rotate to driveArc in radius
 
-
-
-
-
 	#Bumper Event Callback function
 	def readBumper(msg):
 	    if (msg.state == 1):
 	        print "Bumper pressed!"
 	        executeTrajectory()
-
-
 
 	# (Optional) If you need something to happen repeatedly at a fixed interval, write the code here.
 	# Start the timer with the following line of code: 
@@ -166,6 +166,8 @@ class TurtleBot(object):
 	    msg.linear.x = linearVelocity
 	    msg.angular.z = angularVelocity
 	    pub.publish(msg)
+
+	def executeAStar(self):
 
 
 
