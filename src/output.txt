@@ -1,0 +1,21 @@
+this is mapCallBack
+0.300000011921
+4
+3
+0.300000011921
+set([<__main__.GridCell instance at 0x7fe88c223290>])
+current: 4 3
+open set: set([])
+set([<__main__.GridCell instance at 0x7fe88c223290>])
+upCoord 4 4
+setting current
+current: 4 2
+open set: set([<__main__.GridCell instance at 0x7fe88c219e18>, <__main__.GridCell instance at 0x7fe88c2233b0>, <__main__.GridCell instance at 0x7fe88c2234d0>])
+set([<__main__.GridCell instance at 0x7fe88c223290>, <__main__.GridCell instance at 0x7fe88c219dd0>])
+upCoord 4 3
+setting current
+current: 3 2
+open set: set([<__main__.GridCell instance at 0x7fe88c219e18>, <__main__.GridCell instance at 0x7fe88c2234d0>, <__main__.GridCell instance at 0x7fe88c223560>, <__main__.GridCell instance at 0x7fe88c2235a8>, <__main__.GridCell instance at 0x7fe88c2233b0>, <__main__.GridCell instance at 0x7fe88c2235f0>])
+set([<__main__.GridCell instance at 0x7fe88c223290>, <__main__.GridCell instance at 0x7fe88c223638>, <__main__.GridCell instance at 0x7fe88c219dd0>])
+upCoord 3 3
+current: 3 2

@@ -1,0 +1,8 @@
+prefix=/home/bdog/RBE3002/install
+
+Name: bknox_lab2
+Description: Description of bknox_lab2
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/bdog/RBE3002/install/lib 
+Requires: 

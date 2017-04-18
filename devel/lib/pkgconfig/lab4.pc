@@ -1,0 +1,8 @@
+prefix=/home/bdog/RBE3002/devel
+
+Name: lab4
+Description: Description of lab4
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/bdog/RBE3002/devel/lib 
+Requires: 
