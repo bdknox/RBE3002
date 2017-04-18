@@ -8,23 +8,46 @@ from geometry_msgs.msg import Twist, Pose, PoseStamped
 from tf.transformations import euler_from_quaternion
 
 class TurtleBot(object):
+
+	wheel = .23
+	radius = .035
+
+	max_linear = 5
+	min_linear = .5
+
+	max_angular = 2
+	min_angular = .1
+
+	stop_msg = Twist()
+	stop_msg.linear.x = 0
+	stop_msg.angular.z = 0
+
 	def __init__(self):
-		wheel = .10
-		radius = .21
+		print 'creating Turtlebot'
+		self.transfromation = tf.TransformerROS()
 
-		max_linear = 5
-		min_linear = .5
+		self.pose = Pose()
+		pos = Point()
+		quaternion = Quaternion()
+		self.pose.position = pos
+		self.pose.quaternion = quaternion
+		self.pose.position.x = 0
+		self.pose.position.y = 0
+		self.pose.position.z = 0
 
-		max_angular = 2
-		min_angular = .1
+		self.initPos = [0,0,0]
+		self.initOrient = [0,0,0,0]
 
-		stop_msg = Twist()
-		stop_msg.linear.x = 0
-		stop_msg.angular.z = 0
+		self.hopeful = [0,0,0]
 
+		self.pub = rospy.Publisher('cmd_vel_mux/input/teleop', Twist, None, queue_size=10)
+		self.goal_sub = rospy.Subscriber('move_base_simple/goal', PoseStamped, self.doAstar, queue_size=1)
+		#self.bump_sub = rospy.Subscriber('mobile_base/events/bumper', BumperEvent, self.readBumper, queue_size=1)
+		self.odom_sub = rospy.Subscriber('/odom', Odometry, self.readOdom)
+		self.odom_lis = tf.TransformListener()
+		self.odom_bro = tf.TransformBroadcaster()
 
-	# Add additional imports for each of the message types used
-
+		print 'Completed making Turtlebot'
 
 	#drive to a goal subscribed as /move_base_simple/goal
 	def navToPose(goal):
