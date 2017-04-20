@@ -34,7 +34,7 @@ class Node(object):
 		#print self.coord.x + res/2, self.coord.x - res/2, pos.x, self.coord.y + res/2, self.coord.y - res/2, pos.y
 		if self.coord.x + res/2 > pos.x and self.coord.x - res/2 < pos.x and self.coord.y + res/2 > pos.y and self.coord.y - res/2 < pos.y:
 			return True
-		# elif not self.parent:
-		# 	return False
-		else:
+		elif not self.parent:
 			return False
+		else:
+			return self.parent.contains(pos, res)

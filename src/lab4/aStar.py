@@ -14,15 +14,15 @@ class aStar(object):
 
         self.frontier_pub = rospy.Publisher('frontier', GridCells, queue_size=10)
         self.explored_pub = rospy.Publisher('explored', GridCells, queue_size=10)
-        #shortpath_pub  = rospy.Publisher('shortpath', GridCells, queue_size=10)
+        self.shortpath_pub  = rospy.Publisher('shortpath', GridCells, queue_size=10)
         #obstacles_pub = rospy.Publisher('obstacles', GridCells, queue_size=10)
         #unexplored_pub = rospy.Publisher('unexplored', GridCells, queue_size=10)
 
     def justDoIt(self, startCoord, goalCoord):
         self.startCoord = startCoord
-        startNode = Node.Node(startCoord, None, 0)
+        self.startNode = Node.Node(startCoord, None, 0)
         self.frontier = []
-        self.frontier.append(startNode)
+        self.frontier.append(self.startNode)
         self.explored = []
         self.goalCoord = goalCoord
         print goalCoord
@@ -31,6 +31,11 @@ class aStar(object):
         self.pub.header = self.map.header
         self.pub.cell_width = self.map.info.resolution
         self.pub.cell_height = self.map.info.resolution
+
+        self.exp = GridCells()
+        self.exp.header = self.map.header
+        self.exp.cell_width = self.map.info.resolution
+        self.exp.cell_height = self.map.info.resolution
 
         self.path = GridCells()
         self.path.header = self.map.header
@@ -44,11 +49,11 @@ class aStar(object):
                 print 'good job buddy'
                 continue
             self.explored.append(next.coord)
-            self.path.cells.append(next.coord)
+            self.exp.cells.append(next.coord)
             if self.frontier:
                 self.pub.cells.remove(next.coord)
 
-            neighbors = next.getNeighbors(self.map.info.resolution, startNode)
+            neighbors = next.getNeighbors(self.map.info.resolution, self.startNode)
 
             for node in neighbors:
                 time.sleep(.01)
@@ -74,10 +79,10 @@ class aStar(object):
                         self.pub.cells.append(node.coord)
 
             self.frontier_pub.publish(self.pub)
-            self.explored_pub.publish(self.path)
+            self.explored_pub.publish(self.exp)
         print 'suh dude where ya been?'
         # for pnt in self.explored:
-        #     self.path.cells.append(pnt)
+        #     self.exp.cells.append(pnt)
         
 
     def isValid(self, pos):
@@ -113,4 +118,22 @@ class aStar(object):
         self.map = msg
 
     def getPoints(self):
-        
+        cell = self.frontier[0]
+        print self.exp.cells
+        while cell.parent is not self.startNode:
+            time.sleep(.1)
+            print cell.coord.x, cell.coord.y
+            self.path.cells.append(cell.coord)
+            if self.wasHere(cell.coord):
+                self.exp.cells.remove(cell.coord)
+            cell = cell.parent
+            self.shortpath_pub.publish(self.path)
+            self.explored_pub.publish(self.exp)
+        time.sleep(.1)
+        print self.startCoord.x, self.startCoord.y
+        self.path.cells.append(self.startCoord)
+        if self.wasHere(self.startCoord):
+                self.exp.cells.remove(self.startCoord)
+        self.shortpath_pub.publish(self.path)
+        self.explored_pub.publish(self.exp)
+        print 'printed path'
