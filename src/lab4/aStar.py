@@ -120,7 +120,7 @@ class aStar(object):
     def getPoints(self):
         cell = self.frontier[0]
         print self.exp.cells
-        while cell.parent is not self.startNode:
+        while cell is not self.startNode:
             time.sleep(.1)
             print cell.coord.x, cell.coord.y
             self.path.cells.append(cell.coord)
