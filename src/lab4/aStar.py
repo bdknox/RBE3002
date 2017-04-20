@@ -39,35 +39,46 @@ class aStar(object):
 
         while not self.frontier[0].contains(goalCoord, self.robot):
             next = self.frontier.pop(0)
-            print 'explored:', self.explored
+            print 'explored:', len(self.explored)
             if self.wasHere(next.coord):
                 print 'good job buddy'
                 continue
             self.explored.append(next.coord)
+            self.path.cells.append(next.coord)
             if self.frontier:
                 self.pub.cells.remove(next.coord)
 
-            neighbors = next.getNeighbors(self.map.info.resolution)
+            neighbors = next.getNeighbors(self.map.info.resolution, startNode)
 
             for node in neighbors:
+                time.sleep(.01)
                 if self.isValid(node.coord):
-                    if not self.frontier:
-                        self.frontier.append(node)
-                    else:
-                        node_cost = node.dist + self.hCost(node.coord, self.goalCoord) #self.goal?
-                        for i, j in enumerate(self.frontier):
-                            j_cost = j.dist + self.hCost(j.coord, self.goalCoord)
-                            if (node_cost < j_cost):
-                                self.frontier.insert(i, node)
-                                break
-                            elif (i is len(self.frontier)-1):
-                                self.frontier.append(node)
-                                break
+                    if node.contains(goalCoord, self.robot):
+                        self.frontier.insert(0, node)
+                        break
+                    if not self.wasHere(node.coord):
+                        if not self.frontier:
+                            self.frontier.append(node)
+                        else:
+                            node_cost = node.dist + self.hCost(node.coord, self.goalCoord) #self.goal?
+                            for i, j in enumerate(self.frontier):
+                                j_cost = j.dist + self.hCost(j.coord, self.goalCoord)
+                                #if (node_cost < j_cost):
+                                if ((node_cost - .15 < j_cost) and ((node_cost - node.dist) < (j_cost - j.dist))):
+                                    self.frontier.insert(i, node)
+                                    break
+                                elif (i is len(self.frontier)-1):
+                                    self.frontier.append(node)
+                                    break
 
-                    self.pub.cells.append(node.coord)
+                        self.pub.cells.append(node.coord)
 
             self.frontier_pub.publish(self.pub)
+            self.explored_pub.publish(self.path)
         print 'suh dude where ya been?'
+        # for pnt in self.explored:
+        #     self.path.cells.append(pnt)
+        
 
     def isValid(self, pos):
         room = self.robot + self.resolution/2
@@ -81,8 +92,10 @@ class aStar(object):
                     indx = xPoint + self.map.info.width*yPoint
                     # print indx
                     try:
-                        if self.map.data[indx] is 100:
+                        if indx < 5:
                             return True
+                        if self.map.data[indx] is 100:
+                            return False
                     except:
                         return False
         return True
@@ -100,4 +113,4 @@ class aStar(object):
         self.map = msg
 
     def getPoints(self):
-        pass
+        
