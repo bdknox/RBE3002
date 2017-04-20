@@ -42,6 +42,8 @@ class aStar(object):
         self.path.cell_width = self.map.info.resolution
         self.path.cell_height = self.map.info.resolution
 
+        self.shortpath_pub.publish(self.path)
+
         while not self.frontier[0].contains(goalCoord, self.robot):
             next = self.frontier.pop(0)
             print 'explored:', len(self.explored)
@@ -56,7 +58,7 @@ class aStar(object):
             neighbors = next.getNeighbors(self.map.info.resolution, self.startNode)
 
             for node in neighbors:
-                time.sleep(.01)
+                time.sleep(.001)
                 if self.isValid(node.coord):
                     if node.contains(goalCoord, self.robot):
                         self.frontier.insert(0, node)
@@ -97,8 +99,6 @@ class aStar(object):
                     indx = xPoint + self.map.info.width*yPoint
                     # print indx
                     try:
-                        if indx < 5:
-                            return True
                         if self.map.data[indx] is 100:
                             return False
                     except:
@@ -119,10 +119,10 @@ class aStar(object):
 
     def getPoints(self):
         cell = self.frontier[0]
-        print self.exp.cells
+        # print self.exp.cells
         while cell is not self.startNode:
             time.sleep(.1)
-            print cell.coord.x, cell.coord.y
+            # print cell.coord.x, cell.coord.y
             self.path.cells.append(cell.coord)
             if self.wasHere(cell.coord):
                 self.exp.cells.remove(cell.coord)

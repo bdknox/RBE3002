@@ -1,6 +1,2691 @@
 creating Turtlebot
 Completed making Turtlebot
-x: 1.521235466
-y: 1.48683440685
+x: 4.9160823822
+y: 2.82071495056
 z: 0.0
+explored: 0
+explored: 1
+explored: 2
+explored: 3
+explored: 4
+explored: 5
+explored: 6
+explored: 7
+explored: 8
+explored: 9
+good job buddy
+explored: 9
+explored: 10
+explored: 11
+explored: 12
+explored: 13
+good job buddy
+explored: 13
+explored: 14
+explored: 15
+explored: 16
+explored: 17
+explored: 18
+good job buddy
+explored: 18
+explored: 19
+good job buddy
+explored: 19
+good job buddy
+explored: 19
+good job buddy
+explored: 19
+good job buddy
+explored: 19
+good job buddy
+explored: 19
+good job buddy
+explored: 19
+good job buddy
+explored: 19
+explored: 20
+explored: 21
+good job buddy
+explored: 21
+good job buddy
+explored: 21
+good job buddy
+explored: 21
+explored: 22
+explored: 23
+good job buddy
+explored: 23
+good job buddy
+explored: 23
+good job buddy
+explored: 23
+explored: 24
+explored: 25
+good job buddy
+explored: 25
+good job buddy
+explored: 25
+good job buddy
+explored: 25
+good job buddy
+explored: 25
+good job buddy
+explored: 25
+good job buddy
+explored: 25
+good job buddy
+explored: 25
+good job buddy
+explored: 25
+good job buddy
+explored: 25
+good job buddy
+explored: 25
+good job buddy
+explored: 25
+good job buddy
+explored: 25
+good job buddy
+explored: 25
+good job buddy
+explored: 25
+good job buddy
+explored: 25
+good job buddy
+explored: 25
+explored: 26
+explored: 27
+good job buddy
+explored: 27
+good job buddy
+explored: 27
+good job buddy
+explored: 27
+good job buddy
+explored: 27
+good job buddy
+explored: 27
+good job buddy
+explored: 27
+explored: 28
+good job buddy
+explored: 28
+good job buddy
+explored: 28
+good job buddy
+explored: 28
+good job buddy
+explored: 28
+good job buddy
+explored: 28
+good job buddy
+explored: 28
+good job buddy
+explored: 28
+explored: 29
+good job buddy
+explored: 29
+explored: 30
+good job buddy
+explored: 30
+explored: 31
+good job buddy
+explored: 31
+good job buddy
+explored: 31
+good job buddy
+explored: 31
+good job buddy
+explored: 31
+explored: 32
+good job buddy
+explored: 32
+good job buddy
+explored: 32
+explored: 33
+explored: 34
+good job buddy
+explored: 34
+good job buddy
+explored: 34
+good job buddy
+explored: 34
+good job buddy
+explored: 34
+explored: 35
+explored: 36
+good job buddy
+explored: 36
+good job buddy
+explored: 36
+good job buddy
+explored: 36
+good job buddy
+explored: 36
+explored: 37
+good job buddy
+explored: 37
+good job buddy
+explored: 37
+good job buddy
+explored: 37
+good job buddy
+explored: 37
+explored: 38
+explored: 39
+explored: 40
+good job buddy
+explored: 40
+good job buddy
+explored: 40
+good job buddy
+explored: 40
+good job buddy
+explored: 40
+good job buddy
+explored: 40
+explored: 41
+explored: 42
+good job buddy
+explored: 42
+good job buddy
+explored: 42
+good job buddy
+explored: 42
+explored: 43
+good job buddy
+explored: 43
+good job buddy
+explored: 43
+good job buddy
+explored: 43
+good job buddy
+explored: 43
+good job buddy
+explored: 43
+explored: 44
+good job buddy
+explored: 44
+explored: 45
+good job buddy
+explored: 45
+explored: 46
+good job buddy
+explored: 46
+good job buddy
+explored: 46
+good job buddy
+explored: 46
+good job buddy
+explored: 46
+good job buddy
+explored: 46
+explored: 47
+explored: 48
+good job buddy
+explored: 48
+explored: 49
+good job buddy
+explored: 49
+good job buddy
+explored: 49
+good job buddy
+explored: 49
+good job buddy
+explored: 49
+good job buddy
+explored: 49
+explored: 50
+good job buddy
+explored: 50
+explored: 51
+explored: 52
+good job buddy
+explored: 52
+good job buddy
+explored: 52
+good job buddy
+explored: 52
+good job buddy
+explored: 52
+explored: 53
+good job buddy
+explored: 53
+explored: 54
+good job buddy
+explored: 54
+explored: 55
+explored: 56
+explored: 57
+good job buddy
+explored: 57
+good job buddy
+explored: 57
+good job buddy
+explored: 57
+explored: 58
+explored: 59
+good job buddy
+explored: 59
+good job buddy
+explored: 59
+explored: 60
+explored: 61
+explored: 62
+explored: 63
+explored: 64
+good job buddy
+explored: 64
+explored: 65
+explored: 66
+good job buddy
+explored: 66
+good job buddy
+explored: 66
+good job buddy
+explored: 66
+explored: 67
+good job buddy
+explored: 67
+explored: 68
+good job buddy
+explored: 68
+explored: 69
+good job buddy
+explored: 69
+good job buddy
+explored: 69
+explored: 70
+explored: 71
+good job buddy
+explored: 71
+good job buddy
+explored: 71
+explored: 72
+explored: 73
+good job buddy
+explored: 73
+good job buddy
+explored: 73
+good job buddy
+explored: 73
+explored: 74
+good job buddy
+explored: 74
+good job buddy
+explored: 74
+explored: 75
+good job buddy
+explored: 75
+good job buddy
+explored: 75
+good job buddy
+explored: 75
+good job buddy
+explored: 75
+explored: 76
+good job buddy
+explored: 76
+good job buddy
+explored: 76
+good job buddy
+explored: 76
+good job buddy
+explored: 76
+explored: 77
+explored: 78
+good job buddy
+explored: 78
+good job buddy
+explored: 78
+explored: 79
+good job buddy
+explored: 79
+good job buddy
+explored: 79
+explored: 80
+explored: 81
+explored: 82
+explored: 83
+explored: 84
+explored: 85
+explored: 86
+explored: 87
+explored: 88
+explored: 89
+explored: 90
+good job buddy
+explored: 90
+explored: 91
+good job buddy
+explored: 91
+explored: 92
+good job buddy
+explored: 92
+explored: 93
+good job buddy
+explored: 93
+explored: 94
+good job buddy
+explored: 94
+explored: 95
+explored: 96
+explored: 97
+good job buddy
+explored: 97
+good job buddy
+explored: 97
+good job buddy
+explored: 97
+good job buddy
+explored: 97
+explored: 98
+good job buddy
+explored: 98
+good job buddy
+explored: 98
+explored: 99
+good job buddy
+explored: 99
+good job buddy
+explored: 99
+good job buddy
+explored: 99
+explored: 100
+good job buddy
+explored: 100
+good job buddy
+explored: 100
+explored: 101
+good job buddy
+explored: 101
+good job buddy
+explored: 101
+good job buddy
+explored: 101
+good job buddy
+explored: 101
+good job buddy
+explored: 101
+good job buddy
+explored: 101
+explored: 102
+good job buddy
+explored: 102
+good job buddy
+explored: 102
+good job buddy
+explored: 102
+good job buddy
+explored: 102
+good job buddy
+explored: 102
+good job buddy
+explored: 102
+good job buddy
+explored: 102
+explored: 103
+good job buddy
+explored: 103
+good job buddy
+explored: 103
+explored: 104
+good job buddy
+explored: 104
+good job buddy
+explored: 104
+explored: 105
+good job buddy
+explored: 105
+good job buddy
+explored: 105
+good job buddy
+explored: 105
+good job buddy
+explored: 105
+explored: 106
+good job buddy
+explored: 106
+good job buddy
+explored: 106
+good job buddy
+explored: 106
+good job buddy
+explored: 106
+explored: 107
+good job buddy
+explored: 107
+good job buddy
+explored: 107
+good job buddy
+explored: 107
+good job buddy
+explored: 107
+good job buddy
+explored: 107
+good job buddy
+explored: 107
+explored: 108
+good job buddy
+explored: 108
+good job buddy
+explored: 108
+good job buddy
+explored: 108
+explored: 109
+good job buddy
+explored: 109
+explored: 110
+good job buddy
+explored: 110
+explored: 111
+good job buddy
+explored: 111
+good job buddy
+explored: 111
+good job buddy
+explored: 111
+explored: 112
+good job buddy
+explored: 112
+good job buddy
+explored: 112
+good job buddy
+explored: 112
+good job buddy
+explored: 112
+good job buddy
+explored: 112
+explored: 113
+good job buddy
+explored: 113
+good job buddy
+explored: 113
+good job buddy
+explored: 113
+good job buddy
+explored: 113
+good job buddy
+explored: 113
+good job buddy
+explored: 113
+explored: 114
+good job buddy
+explored: 114
+good job buddy
+explored: 114
+good job buddy
+explored: 114
+explored: 115
+good job buddy
+explored: 115
+good job buddy
+explored: 115
+explored: 116
+good job buddy
+explored: 116
+good job buddy
+explored: 116
+good job buddy
+explored: 116
+good job buddy
+explored: 116
+good job buddy
+explored: 116
+good job buddy
+explored: 116
+good job buddy
+explored: 116
+explored: 117
+good job buddy
+explored: 117
+good job buddy
+explored: 117
+good job buddy
+explored: 117
+good job buddy
+explored: 117
+good job buddy
+explored: 117
+explored: 118
+good job buddy
+explored: 118
+good job buddy
+explored: 118
+good job buddy
+explored: 118
+explored: 119
+explored: 120
+good job buddy
+explored: 120
+good job buddy
+explored: 120
+good job buddy
+explored: 120
+explored: 121
+good job buddy
+explored: 121
+good job buddy
+explored: 121
+good job buddy
+explored: 121
+explored: 122
+good job buddy
+explored: 122
+good job buddy
+explored: 122
+explored: 123
+good job buddy
+explored: 123
+good job buddy
+explored: 123
+good job buddy
+explored: 123
+good job buddy
+explored: 123
+explored: 124
+good job buddy
+explored: 124
+explored: 125
+good job buddy
+explored: 125
+good job buddy
+explored: 125
+good job buddy
+explored: 125
+explored: 126
+good job buddy
+explored: 126
+good job buddy
+explored: 126
+good job buddy
+explored: 126
+good job buddy
+explored: 126
+good job buddy
+explored: 126
+good job buddy
+explored: 126
+good job buddy
+explored: 126
+explored: 127
+good job buddy
+explored: 127
+explored: 128
+good job buddy
+explored: 128
+good job buddy
+explored: 128
+good job buddy
+explored: 128
+explored: 129
+good job buddy
+explored: 129
+good job buddy
+explored: 129
+good job buddy
+explored: 129
+explored: 130
+good job buddy
+explored: 130
+good job buddy
+explored: 130
+explored: 131
+good job buddy
+explored: 131
+explored: 132
+good job buddy
+explored: 132
+good job buddy
+explored: 132
+good job buddy
+explored: 132
+good job buddy
+explored: 132
+good job buddy
+explored: 132
+good job buddy
+explored: 132
+explored: 133
+good job buddy
+explored: 133
+good job buddy
+explored: 133
+good job buddy
+explored: 133
+explored: 134
+good job buddy
+explored: 134
+good job buddy
+explored: 134
+explored: 135
+good job buddy
+explored: 135
+good job buddy
+explored: 135
+explored: 136
+good job buddy
+explored: 136
+good job buddy
+explored: 136
+good job buddy
+explored: 136
+explored: 137
+good job buddy
+explored: 137
+good job buddy
+explored: 137
+explored: 138
+good job buddy
+explored: 138
+explored: 139
+good job buddy
+explored: 139
+good job buddy
+explored: 139
+explored: 140
+explored: 141
+good job buddy
+explored: 141
+good job buddy
+explored: 141
+good job buddy
+explored: 141
+explored: 142
+good job buddy
+explored: 142
+explored: 143
+good job buddy
+explored: 143
+explored: 144
+good job buddy
+explored: 144
+good job buddy
+explored: 144
+good job buddy
+explored: 144
+good job buddy
+explored: 144
+explored: 145
+good job buddy
+explored: 145
+good job buddy
+explored: 145
+good job buddy
+explored: 145
+good job buddy
+explored: 145
+explored: 146
+explored: 147
+good job buddy
+explored: 147
+good job buddy
+explored: 147
+explored: 148
+good job buddy
+explored: 148
+good job buddy
+explored: 148
+good job buddy
+explored: 148
+explored: 149
+explored: 150
+good job buddy
+explored: 150
+explored: 151
+good job buddy
+explored: 151
+good job buddy
+explored: 151
+good job buddy
+explored: 151
+good job buddy
+explored: 151
+good job buddy
+explored: 151
+explored: 152
+good job buddy
+explored: 152
+good job buddy
+explored: 152
+explored: 153
+good job buddy
+explored: 153
+good job buddy
+explored: 153
+good job buddy
+explored: 153
+explored: 154
+explored: 155
+good job buddy
+explored: 155
+explored: 156
+good job buddy
+explored: 156
+good job buddy
+explored: 156
+good job buddy
+explored: 156
+explored: 157
+good job buddy
+explored: 157
+explored: 158
+good job buddy
+explored: 158
+good job buddy
+explored: 158
+explored: 159
+good job buddy
+explored: 159
+good job buddy
+explored: 159
+good job buddy
+explored: 159
+explored: 160
+good job buddy
+explored: 160
+good job buddy
+explored: 160
+good job buddy
+explored: 160
+good job buddy
+explored: 160
+explored: 161
+good job buddy
+explored: 161
+good job buddy
+explored: 161
+good job buddy
+explored: 161
+explored: 162
+explored: 163
+good job buddy
+explored: 163
+good job buddy
+explored: 163
+explored: 164
+good job buddy
+explored: 164
+good job buddy
+explored: 164
+explored: 165
+good job buddy
+explored: 165
+good job buddy
+explored: 165
+good job buddy
+explored: 165
+good job buddy
+explored: 165
+good job buddy
+explored: 165
+explored: 166
+good job buddy
+explored: 166
+explored: 167
+good job buddy
+explored: 167
+explored: 168
+good job buddy
+explored: 168
+good job buddy
+explored: 168
+good job buddy
+explored: 168
+explored: 169
+explored: 170
+good job buddy
+explored: 170
+explored: 171
+good job buddy
+explored: 171
+explored: 172
+good job buddy
+explored: 172
+good job buddy
+explored: 172
+good job buddy
+explored: 172
+explored: 173
+good job buddy
+explored: 173
+good job buddy
+explored: 173
+explored: 174
+explored: 175
+good job buddy
+explored: 175
+good job buddy
+explored: 175
+good job buddy
+explored: 175
+explored: 176
+explored: 177
+good job buddy
+explored: 177
+good job buddy
+explored: 177
+good job buddy
+explored: 177
+explored: 178
+good job buddy
+explored: 178
+explored: 179
+explored: 180
+explored: 181
+good job buddy
+explored: 181
+good job buddy
+explored: 181
+explored: 182
+good job buddy
+explored: 182
+explored: 183
+good job buddy
+explored: 183
+good job buddy
+explored: 183
+good job buddy
+explored: 183
+good job buddy
+explored: 183
+explored: 184
+explored: 185
+good job buddy
+explored: 185
+good job buddy
+explored: 185
+good job buddy
+explored: 185
+explored: 186
+good job buddy
+explored: 186
+good job buddy
+explored: 186
+good job buddy
+explored: 186
+good job buddy
+explored: 186
+explored: 187
+explored: 188
+good job buddy
+explored: 188
+good job buddy
+explored: 188
+good job buddy
+explored: 188
+explored: 189
+good job buddy
+explored: 189
+good job buddy
+explored: 189
+good job buddy
+explored: 189
+explored: 190
+good job buddy
+explored: 190
+explored: 191
+explored: 192
+explored: 193
+good job buddy
+explored: 193
+good job buddy
+explored: 193
+good job buddy
+explored: 193
+good job buddy
+explored: 193
+good job buddy
+explored: 193
+explored: 194
+good job buddy
+explored: 194
+good job buddy
+explored: 194
+explored: 195
+good job buddy
+explored: 195
+explored: 196
+good job buddy
+explored: 196
+good job buddy
+explored: 196
+good job buddy
+explored: 196
+explored: 197
+good job buddy
+explored: 197
+explored: 198
+explored: 199
+explored: 200
+explored: 201
+explored: 202
+explored: 203
+explored: 204
+explored: 205
+explored: 206
+explored: 207
+good job buddy
+explored: 207
+good job buddy
+explored: 207
+good job buddy
+explored: 207
+good job buddy
+explored: 207
+good job buddy
+explored: 207
+explored: 208
+explored: 209
+good job buddy
+explored: 209
+good job buddy
+explored: 209
+explored: 210
+good job buddy
+explored: 210
+explored: 211
+good job buddy
+explored: 211
+good job buddy
+explored: 211
+good job buddy
+explored: 211
+explored: 212
+explored: 213
+good job buddy
+explored: 213
+good job buddy
+explored: 213
+good job buddy
+explored: 213
+good job buddy
+explored: 213
+good job buddy
+explored: 213
+good job buddy
+explored: 213
+good job buddy
+explored: 213
+explored: 214
+good job buddy
+explored: 214
+explored: 215
+good job buddy
+explored: 215
+good job buddy
+explored: 215
+explored: 216
+good job buddy
+explored: 216
+explored: 217
+good job buddy
+explored: 217
+explored: 218
+good job buddy
+explored: 218
+explored: 219
+good job buddy
+explored: 219
+explored: 220
+good job buddy
+explored: 220
+good job buddy
+explored: 220
+good job buddy
+explored: 220
+good job buddy
+explored: 220
+good job buddy
+explored: 220
+good job buddy
+explored: 220
+good job buddy
+explored: 220
+explored: 221
+good job buddy
+explored: 221
+explored: 222
+good job buddy
+explored: 222
+good job buddy
+explored: 222
+explored: 223
+good job buddy
+explored: 223
+good job buddy
+explored: 223
+good job buddy
+explored: 223
+good job buddy
+explored: 223
+good job buddy
+explored: 223
+good job buddy
+explored: 223
+good job buddy
+explored: 223
+good job buddy
+explored: 223
+good job buddy
+explored: 223
+good job buddy
+explored: 223
+good job buddy
+explored: 223
+explored: 224
+good job buddy
+explored: 224
+good job buddy
+explored: 224
+explored: 225
+explored: 226
+explored: 227
+good job buddy
+explored: 227
+good job buddy
+explored: 227
+good job buddy
+explored: 227
+good job buddy
+explored: 227
+good job buddy
+explored: 227
+explored: 228
+good job buddy
+explored: 228
+good job buddy
+explored: 228
+good job buddy
+explored: 228
+good job buddy
+explored: 228
+good job buddy
+explored: 228
+good job buddy
+explored: 228
+explored: 229
+good job buddy
+explored: 229
+good job buddy
+explored: 229
+explored: 230
+good job buddy
+explored: 230
+good job buddy
+explored: 230
+good job buddy
+explored: 230
+explored: 231
+good job buddy
+explored: 231
+explored: 232
+good job buddy
+explored: 232
+good job buddy
+explored: 232
+good job buddy
+explored: 232
+explored: 233
+good job buddy
+explored: 233
+good job buddy
+explored: 233
+good job buddy
+explored: 233
+explored: 234
+explored: 235
+good job buddy
+explored: 235
+good job buddy
+explored: 235
+good job buddy
+explored: 235
+good job buddy
+explored: 235
+good job buddy
+explored: 235
+good job buddy
+explored: 235
+good job buddy
+explored: 235
+good job buddy
+explored: 235
+good job buddy
+explored: 235
+good job buddy
+explored: 235
+good job buddy
+explored: 235
+good job buddy
+explored: 235
+good job buddy
+explored: 235
+good job buddy
+explored: 235
+explored: 236
+explored: 237
+good job buddy
+explored: 237
+good job buddy
+explored: 237
+good job buddy
+explored: 237
+good job buddy
+explored: 237
+good job buddy
+explored: 237
+good job buddy
+explored: 237
+explored: 238
+good job buddy
+explored: 238
+good job buddy
+explored: 238
+good job buddy
+explored: 238
+good job buddy
+explored: 238
+explored: 239
+good job buddy
+explored: 239
+explored: 240
+good job buddy
+explored: 240
+good job buddy
+explored: 240
+explored: 241
+good job buddy
+explored: 241
+good job buddy
+explored: 241
+good job buddy
+explored: 241
+good job buddy
+explored: 241
+good job buddy
+explored: 241
+explored: 242
+good job buddy
+explored: 242
+good job buddy
+explored: 242
+good job buddy
+explored: 242
+good job buddy
+explored: 242
+explored: 243
+good job buddy
+explored: 243
+good job buddy
+explored: 243
+explored: 244
+explored: 245
+good job buddy
+explored: 245
+good job buddy
+explored: 245
+good job buddy
+explored: 245
+good job buddy
+explored: 245
+good job buddy
+explored: 245
+explored: 246
+good job buddy
+explored: 246
+good job buddy
+explored: 246
+explored: 247
+good job buddy
+explored: 247
+good job buddy
+explored: 247
+good job buddy
+explored: 247
+good job buddy
+explored: 247
+explored: 248
+good job buddy
+explored: 248
+explored: 249
+good job buddy
+explored: 249
+explored: 250
+good job buddy
+explored: 250
+good job buddy
+explored: 250
+good job buddy
+explored: 250
+explored: 251
+good job buddy
+explored: 251
+explored: 252
+good job buddy
+explored: 252
+explored: 253
+good job buddy
+explored: 253
+good job buddy
+explored: 253
+explored: 254
+good job buddy
+explored: 254
+good job buddy
+explored: 254
+good job buddy
+explored: 254
+explored: 255
+good job buddy
+explored: 255
+good job buddy
+explored: 255
+good job buddy
+explored: 255
+explored: 256
+good job buddy
+explored: 256
+explored: 257
+explored: 258
+good job buddy
+explored: 258
+explored: 259
+explored: 260
+explored: 261
+good job buddy
+explored: 261
+good job buddy
+explored: 261
+explored: 262
+good job buddy
+explored: 262
+explored: 263
+good job buddy
+explored: 263
+good job buddy
+explored: 263
+good job buddy
+explored: 263
+good job buddy
+explored: 263
+good job buddy
+explored: 263
+good job buddy
+explored: 263
+good job buddy
+explored: 263
+good job buddy
+explored: 263
+explored: 264
+good job buddy
+explored: 264
+good job buddy
+explored: 264
+explored: 265
+good job buddy
+explored: 265
+explored: 266
+explored: 267
+good job buddy
+explored: 267
+good job buddy
+explored: 267
+good job buddy
+explored: 267
+explored: 268
+explored: 269
+good job buddy
+explored: 269
+good job buddy
+explored: 269
+explored: 270
+explored: 271
+explored: 272
+good job buddy
+explored: 272
+good job buddy
+explored: 272
+good job buddy
+explored: 272
+good job buddy
+explored: 272
+good job buddy
+explored: 272
+explored: 273
+good job buddy
+explored: 273
+explored: 274
+good job buddy
+explored: 274
+explored: 275
+good job buddy
+explored: 275
+explored: 276
+explored: 277
+explored: 278
+good job buddy
+explored: 278
+good job buddy
+explored: 278
+good job buddy
+explored: 278
+good job buddy
+explored: 278
+explored: 279
+good job buddy
+explored: 279
+explored: 280
+good job buddy
+explored: 280
+good job buddy
+explored: 280
+good job buddy
+explored: 280
+explored: 281
+explored: 282
+good job buddy
+explored: 282
+good job buddy
+explored: 282
+good job buddy
+explored: 282
+good job buddy
+explored: 282
+explored: 283
+good job buddy
+explored: 283
+explored: 284
+good job buddy
+explored: 284
+good job buddy
+explored: 284
+good job buddy
+explored: 284
+good job buddy
+explored: 284
+explored: 285
+good job buddy
+explored: 285
+good job buddy
+explored: 285
+explored: 286
+explored: 287
+good job buddy
+explored: 287
+good job buddy
+explored: 287
+good job buddy
+explored: 287
+explored: 288
+good job buddy
+explored: 288
+good job buddy
+explored: 288
+good job buddy
+explored: 288
+good job buddy
+explored: 288
+good job buddy
+explored: 288
+good job buddy
+explored: 288
+explored: 289
+good job buddy
+explored: 289
+good job buddy
+explored: 289
+good job buddy
+explored: 289
+explored: 290
+good job buddy
+explored: 290
+good job buddy
+explored: 290
+good job buddy
+explored: 290
+explored: 291
+explored: 292
+good job buddy
+explored: 292
+explored: 293
+good job buddy
+explored: 293
+explored: 294
+good job buddy
+explored: 294
+explored: 295
+explored: 296
+good job buddy
+explored: 296
+good job buddy
+explored: 296
+good job buddy
+explored: 296
+explored: 297
+good job buddy
+explored: 297
+good job buddy
+explored: 297
+good job buddy
+explored: 297
+good job buddy
+explored: 297
+good job buddy
+explored: 297
+good job buddy
+explored: 297
+good job buddy
+explored: 297
+good job buddy
+explored: 297
+explored: 298
+good job buddy
+explored: 298
+good job buddy
+explored: 298
+good job buddy
+explored: 298
+good job buddy
+explored: 298
+good job buddy
+explored: 298
+explored: 299
+explored: 300
+good job buddy
+explored: 300
+good job buddy
+explored: 300
+good job buddy
+explored: 300
+explored: 301
+good job buddy
+explored: 301
+good job buddy
+explored: 301
+good job buddy
+explored: 301
+good job buddy
+explored: 301
+good job buddy
+explored: 301
+explored: 302
+good job buddy
+explored: 302
+good job buddy
+explored: 302
+good job buddy
+explored: 302
+good job buddy
+explored: 302
+good job buddy
+explored: 302
+explored: 303
+good job buddy
+explored: 303
+good job buddy
+explored: 303
+good job buddy
+explored: 303
+good job buddy
+explored: 303
+good job buddy
+explored: 303
+good job buddy
+explored: 303
+explored: 304
+good job buddy
+explored: 304
+good job buddy
+explored: 304
+good job buddy
+explored: 304
+good job buddy
+explored: 304
+good job buddy
+explored: 304
+good job buddy
+explored: 304
+explored: 305
+explored: 306
+good job buddy
+explored: 306
+good job buddy
+explored: 306
+good job buddy
+explored: 306
+good job buddy
+explored: 306
+explored: 307
+good job buddy
+explored: 307
+good job buddy
+explored: 307
+good job buddy
+explored: 307
+explored: 308
+good job buddy
+explored: 308
+explored: 309
+good job buddy
+explored: 309
+good job buddy
+explored: 309
+explored: 310
+explored: 311
+good job buddy
+explored: 311
+good job buddy
+explored: 311
+explored: 312
+good job buddy
+explored: 312
+good job buddy
+explored: 312
+good job buddy
+explored: 312
+good job buddy
+explored: 312
+good job buddy
+explored: 312
+good job buddy
+explored: 312
+explored: 313
+good job buddy
+explored: 313
+good job buddy
+explored: 313
+good job buddy
+explored: 313
+good job buddy
+explored: 313
+good job buddy
+explored: 313
+good job buddy
+explored: 313
+good job buddy
+explored: 313
+good job buddy
+explored: 313
+good job buddy
+explored: 313
+good job buddy
+explored: 313
+explored: 314
+good job buddy
+explored: 314
+explored: 315
+good job buddy
+explored: 315
+explored: 316
+good job buddy
+explored: 316
+good job buddy
+explored: 316
+explored: 317
+good job buddy
+explored: 317
+good job buddy
+explored: 317
+explored: 318
+good job buddy
+explored: 318
+explored: 319
+good job buddy
+explored: 319
+good job buddy
+explored: 319
+explored: 320
+good job buddy
+explored: 320
+explored: 321
+good job buddy
+explored: 321
+good job buddy
+explored: 321
+good job buddy
+explored: 321
+good job buddy
+explored: 321
+good job buddy
+explored: 321
+explored: 322
+explored: 323
+explored: 324
+good job buddy
+explored: 324
+good job buddy
+explored: 324
+good job buddy
+explored: 324
+explored: 325
+good job buddy
+explored: 325
+good job buddy
+explored: 325
+good job buddy
+explored: 325
+explored: 326
+explored: 327
+good job buddy
+explored: 327
+good job buddy
+explored: 327
+good job buddy
+explored: 327
+explored: 328
+good job buddy
+explored: 328
+good job buddy
+explored: 328
+good job buddy
+explored: 328
+explored: 329
+explored: 330
+good job buddy
+explored: 330
+good job buddy
+explored: 330
+good job buddy
+explored: 330
+explored: 331
+good job buddy
+explored: 331
+good job buddy
+explored: 331
+good job buddy
+explored: 331
+good job buddy
+explored: 331
+good job buddy
+explored: 331
+explored: 332
+good job buddy
+explored: 332
+explored: 333
+good job buddy
+explored: 333
+explored: 334
+good job buddy
+explored: 334
+good job buddy
+explored: 334
+good job buddy
+explored: 334
+good job buddy
+explored: 334
+good job buddy
+explored: 334
+explored: 335
+good job buddy
+explored: 335
+explored: 336
+good job buddy
+explored: 336
+explored: 337
+good job buddy
+explored: 337
+good job buddy
+explored: 337
+good job buddy
+explored: 337
+good job buddy
+explored: 337
+explored: 338
+good job buddy
+explored: 338
+explored: 339
+good job buddy
+explored: 339
+explored: 340
+good job buddy
+explored: 340
+good job buddy
+explored: 340
+good job buddy
+explored: 340
+explored: 341
+explored: 342
+explored: 343
+explored: 344
+explored: 345
+explored: 346
+explored: 347
+explored: 348
+explored: 349
+explored: 350
+explored: 351
+explored: 352
+explored: 353
+explored: 354
+explored: 355
+explored: 356
+explored: 357
+explored: 358
+explored: 359
+explored: 360
+explored: 361
+explored: 362
+explored: 363
+explored: 364
+explored: 365
+explored: 366
+explored: 367
+explored: 368
+explored: 369
+explored: 370
+explored: 371
+good job buddy
+explored: 371
+good job buddy
+explored: 371
+explored: 372
+explored: 373
+good job buddy
+explored: 373
+explored: 374
+explored: 375
+good job buddy
+explored: 375
+good job buddy
+explored: 375
+good job buddy
+explored: 375
+explored: 376
+explored: 377
+explored: 378
+explored: 379
+explored: 380
+explored: 381
+explored: 382
+explored: 383
+explored: 384
+explored: 385
+good job buddy
+explored: 385
+good job buddy
+explored: 385
+good job buddy
+explored: 385
+explored: 386
+explored: 387
+explored: 388
+good job buddy
+explored: 388
+good job buddy
+explored: 388
+good job buddy
+explored: 388
+good job buddy
+explored: 388
+good job buddy
+explored: 388
+good job buddy
+explored: 388
+good job buddy
+explored: 388
+explored: 389
+good job buddy
+explored: 389
+explored: 390
+good job buddy
+explored: 390
+good job buddy
+explored: 390
+good job buddy
+explored: 390
+explored: 391
+good job buddy
+explored: 391
+good job buddy
+explored: 391
+good job buddy
+explored: 391
+good job buddy
+explored: 391
+good job buddy
+explored: 391
+good job buddy
+explored: 391
+good job buddy
+explored: 391
+good job buddy
+explored: 391
+good job buddy
+explored: 391
+good job buddy
+explored: 391
+good job buddy
+explored: 391
+explored: 392
+good job buddy
+explored: 392
+good job buddy
+explored: 392
+good job buddy
+explored: 392
+good job buddy
+explored: 392
+good job buddy
+explored: 392
+explored: 393
+explored: 394
+good job buddy
+explored: 394
+good job buddy
+explored: 394
+good job buddy
+explored: 394
+good job buddy
+explored: 394
+good job buddy
+explored: 394
+good job buddy
+explored: 394
+good job buddy
+explored: 394
+explored: 395
+explored: 396
+good job buddy
+explored: 396
+explored: 397
+good job buddy
+explored: 397
+good job buddy
+explored: 397
+good job buddy
+explored: 397
+good job buddy
+explored: 397
+good job buddy
+explored: 397
+good job buddy
+explored: 397
+good job buddy
+explored: 397
+explored: 398
+good job buddy
+explored: 398
+good job buddy
+explored: 398
+good job buddy
+explored: 398
+good job buddy
+explored: 398
+good job buddy
+explored: 398
+good job buddy
+explored: 398
+explored: 399
+good job buddy
+explored: 399
+explored: 400
+explored: 401
+explored: 402
+explored: 403
+good job buddy
+explored: 403
+good job buddy
+explored: 403
+good job buddy
+explored: 403
+good job buddy
+explored: 403
+explored: 404
+good job buddy
+explored: 404
+good job buddy
+explored: 404
+good job buddy
+explored: 404
+good job buddy
+explored: 404
+explored: 405
+explored: 406
+good job buddy
+explored: 406
+explored: 407
+good job buddy
+explored: 407
+explored: 408
+explored: 409
+good job buddy
+explored: 409
+good job buddy
+explored: 409
+explored: 410
+explored: 411
+explored: 412
+explored: 413
+explored: 414
+explored: 415
+explored: 416
+explored: 417
+good job buddy
+explored: 417
+good job buddy
+explored: 417
+explored: 418
+good job buddy
+explored: 418
+explored: 419
+good job buddy
+explored: 419
+good job buddy
+explored: 419
+explored: 420
+good job buddy
+explored: 420
+good job buddy
+explored: 420
+explored: 421
+good job buddy
+explored: 421
+good job buddy
+explored: 421
+good job buddy
+explored: 421
+good job buddy
+explored: 421
+good job buddy
+explored: 421
+good job buddy
+explored: 421
+good job buddy
+explored: 421
+good job buddy
+explored: 421
+good job buddy
+explored: 421
+good job buddy
+explored: 421
+good job buddy
+explored: 421
+good job buddy
+explored: 421
+good job buddy
+explored: 421
+good job buddy
+explored: 421
+good job buddy
+explored: 421
+good job buddy
+explored: 421
+good job buddy
+explored: 421
+good job buddy
+explored: 421
+good job buddy
+explored: 421
+good job buddy
+explored: 421
+good job buddy
+explored: 421
+good job buddy
+explored: 421
+good job buddy
+explored: 421
+good job buddy
+explored: 421
+good job buddy
+explored: 421
+good job buddy
+explored: 421
+good job buddy
+explored: 421
+good job buddy
+explored: 421
+explored: 422
+good job buddy
+explored: 422
+good job buddy
+explored: 422
+good job buddy
+explored: 422
+explored: 423
+good job buddy
+explored: 423
+good job buddy
+explored: 423
+good job buddy
+explored: 423
+explored: 424
+good job buddy
+explored: 424
+explored: 425
+good job buddy
+explored: 425
+good job buddy
+explored: 425
+good job buddy
+explored: 425
+explored: 426
+good job buddy
+explored: 426
+good job buddy
+explored: 426
+good job buddy
+explored: 426
+explored: 427
+good job buddy
+explored: 427
+good job buddy
+explored: 427
+good job buddy
+explored: 427
+good job buddy
+explored: 427
+good job buddy
+explored: 427
+good job buddy
+explored: 427
+good job buddy
+explored: 427
+good job buddy
+explored: 427
+explored: 428
+explored: 429
+good job buddy
+explored: 429
+explored: 430
+explored: 431
+explored: 432
+explored: 433
+explored: 434
+explored: 435
+explored: 436
+explored: 437
+good job buddy
+explored: 437
+explored: 438
+good job buddy
+explored: 438
+good job buddy
+explored: 438
+explored: 439
+good job buddy
+explored: 439
+good job buddy
+explored: 439
+explored: 440
+good job buddy
+explored: 440
+good job buddy
+explored: 440
+explored: 441
+good job buddy
+explored: 441
+good job buddy
+explored: 441
+explored: 442
+explored: 443
+explored: 444
+explored: 445
+good job buddy
+explored: 445
+good job buddy
+explored: 445
+good job buddy
+explored: 445
+good job buddy
+explored: 445
+good job buddy
+explored: 445
+good job buddy
+explored: 445
+explored: 446
+good job buddy
+explored: 446
+good job buddy
+explored: 446
+explored: 447
+good job buddy
+explored: 447
+explored: 448
+good job buddy
+explored: 448
+good job buddy
+explored: 448
+good job buddy
+explored: 448
+good job buddy
+explored: 448
+explored: 449
+good job buddy
+explored: 449
+good job buddy
+explored: 449
+good job buddy
+explored: 449
+good job buddy
+explored: 449
+good job buddy
+explored: 449
+good job buddy
+explored: 449
+good job buddy
+explored: 449
+good job buddy
+explored: 449
+explored: 450
+good job buddy
+explored: 450
+good job buddy
+explored: 450
+good job buddy
+explored: 450
+good job buddy
+explored: 450
+good job buddy
+explored: 450
+good job buddy
+explored: 450
+good job buddy
+explored: 450
+good job buddy
+explored: 450
+good job buddy
+explored: 450
+good job buddy
+explored: 450
+good job buddy
+explored: 450
+good job buddy
+explored: 450
+good job buddy
+explored: 450
+good job buddy
+explored: 450
+good job buddy
+explored: 450
+good job buddy
+explored: 450
+good job buddy
+explored: 450
+good job buddy
+explored: 450
+good job buddy
+explored: 450
+good job buddy
+explored: 450
+good job buddy
+explored: 450
+good job buddy
+explored: 450
+good job buddy
+explored: 450
+explored: 451
+good job buddy
+explored: 451
+explored: 452
+good job buddy
+explored: 452
+explored: 453
+good job buddy
+explored: 453
+good job buddy
+explored: 453
+good job buddy
+explored: 453
+good job buddy
+explored: 453
+good job buddy
+explored: 453
+explored: 454
+good job buddy
+explored: 454
+good job buddy
+explored: 454
+good job buddy
+explored: 454
+good job buddy
+explored: 454
+explored: 455
+good job buddy
+explored: 455
+good job buddy
+explored: 455
+good job buddy
+explored: 455
+good job buddy
+explored: 455
+good job buddy
+explored: 455
+good job buddy
+explored: 455
+good job buddy
+explored: 455
+good job buddy
+explored: 455
+good job buddy
+explored: 455
+good job buddy
+explored: 455
+explored: 456
+good job buddy
+explored: 456
+good job buddy
+explored: 456
+good job buddy
+explored: 456
+good job buddy
+explored: 456
+explored: 457
+good job buddy
+explored: 457
+good job buddy
+explored: 457
+good job buddy
+explored: 457
+explored: 458
+good job buddy
+explored: 458
+good job buddy
+explored: 458
+good job buddy
+explored: 458
+explored: 459
+explored: 460
+good job buddy
+explored: 460
+good job buddy
+explored: 460
+explored: 461
+good job buddy
+explored: 461
+good job buddy
+explored: 461
+good job buddy
+explored: 461
+good job buddy
+explored: 461
+explored: 462
+explored: 463
+good job buddy
+explored: 463
+good job buddy
+explored: 463
+good job buddy
+explored: 463
+good job buddy
+explored: 463
+good job buddy
+explored: 463
+good job buddy
+explored: 463
+good job buddy
+explored: 463
+good job buddy
+explored: 463
+good job buddy
+explored: 463
+good job buddy
+explored: 463
+good job buddy
+explored: 463
+explored: 464
+explored: 465
+good job buddy
+explored: 465
+good job buddy
+explored: 465
+good job buddy
+explored: 465
+good job buddy
+explored: 465
+good job buddy
+explored: 465
+good job buddy
+explored: 465
+good job buddy
+explored: 465
+explored: 466
+explored: 467
+good job buddy
+explored: 467
+good job buddy
+explored: 467
+good job buddy
+explored: 467
+good job buddy
+explored: 467
+good job buddy
+explored: 467
+good job buddy
+explored: 467
+good job buddy
+explored: 467
+good job buddy
+explored: 467
+good job buddy
+explored: 467
+good job buddy
+explored: 467
+explored: 468
+good job buddy
+explored: 468
+good job buddy
+explored: 468
+good job buddy
+explored: 468
+good job buddy
+explored: 468
+good job buddy
+explored: 468
+explored: 469
+good job buddy
+explored: 469
+explored: 470
+good job buddy
+explored: 470
+good job buddy
+explored: 470
+good job buddy
+explored: 470
+explored: 471
+explored: 472
+good job buddy
+explored: 472
+good job buddy
+explored: 472
+explored: 473
+explored: 474
+explored: 475
+explored: 476
+good job buddy
+explored: 476
+good job buddy
+explored: 476
+good job buddy
+explored: 476
+good job buddy
+explored: 476
+good job buddy
+explored: 476
+explored: 477
+good job buddy
+explored: 477
+explored: 478
+explored: 479
+good job buddy
+explored: 479
+good job buddy
+explored: 479
+good job buddy
+explored: 479
+good job buddy
+explored: 479
+good job buddy
+explored: 479
+good job buddy
+explored: 479
+good job buddy
+explored: 479
+good job buddy
+explored: 479
+explored: 480
+explored: 481
+good job buddy
+explored: 481
+explored: 482
+good job buddy
+explored: 482
+good job buddy
+explored: 482
+good job buddy
+explored: 482
+good job buddy
+explored: 482
+good job buddy
+explored: 482
+explored: 483
+explored: 484
+explored: 485
+good job buddy
+explored: 485
+good job buddy
+explored: 485
+good job buddy
+explored: 485
+explored: 486
+good job buddy
+explored: 486
+explored: 487
+good job buddy
+explored: 487
+good job buddy
+explored: 487
+good job buddy
+explored: 487
+good job buddy
+explored: 487
+explored: 488
+good job buddy
+explored: 488
+explored: 489
+explored: 490
+good job buddy
+explored: 490
+good job buddy
+explored: 490
+good job buddy
+explored: 490
+explored: 491
+good job buddy
+explored: 491
+good job buddy
+explored: 491
+good job buddy
+explored: 491
+good job buddy
+explored: 491
+good job buddy
+explored: 491
+explored: 492
+good job buddy
+explored: 492
+explored: 493
+explored: 494
+good job buddy
+explored: 494
+explored: 495
+good job buddy
+explored: 495
+explored: 496
+good job buddy
+explored: 496
+good job buddy
+explored: 496
+explored: 497
+good job buddy
+explored: 497
+good job buddy
+explored: 497
+explored: 498
+explored: 499
+good job buddy
+explored: 499
+good job buddy
+explored: 499
+explored: 500
+good job buddy
+explored: 500
+good job buddy
+explored: 500
+good job buddy
+explored: 500
+explored: 501
+good job buddy
+explored: 501
+good job buddy
+explored: 501
+explored: 502
+good job buddy
+explored: 502
+good job buddy
+explored: 502
+good job buddy
+explored: 502
+good job buddy
+explored: 502
+good job buddy
+explored: 502
+explored: 503
+good job buddy
+explored: 503
+good job buddy
+explored: 503
+explored: 504
+good job buddy
+explored: 504
+good job buddy
+explored: 504
+explored: 505
+explored: 506
+good job buddy
+explored: 506
+explored: 507
+good job buddy
+explored: 507
+good job buddy
+explored: 507
+good job buddy
+explored: 507
+explored: 508
+explored: 509
+good job buddy
+explored: 509
+good job buddy
+explored: 509
+explored: 510
+good job buddy
+explored: 510
+good job buddy
+explored: 510
+good job buddy
+explored: 510
+explored: 511
+good job buddy
+explored: 511
+good job buddy
+explored: 511
+good job buddy
+explored: 511
+good job buddy
+explored: 511
+good job buddy
+explored: 511
+good job buddy
+explored: 511
+good job buddy
+explored: 511
+good job buddy
+explored: 511
+good job buddy
+explored: 511
+good job buddy
+explored: 511
+explored: 512
+explored: 513
+good job buddy
+explored: 513
+good job buddy
+explored: 513
+good job buddy
+explored: 513
+explored: 514
+good job buddy
+explored: 514
+good job buddy
+explored: 514
+good job buddy
+explored: 514
+good job buddy
+explored: 514
+good job buddy
+explored: 514
+good job buddy
+explored: 514
+good job buddy
+explored: 514
+good job buddy
+explored: 514
+explored: 515
+good job buddy
+explored: 515
+explored: 516
+good job buddy
+explored: 516
+good job buddy
+explored: 516
+good job buddy
+explored: 516
+explored: 517
+good job buddy
+explored: 517
+good job buddy
+explored: 517
+good job buddy
+explored: 517
+good job buddy
+explored: 517
+explored: 518
+good job buddy
+explored: 518
+explored: 519
+good job buddy
+explored: 519
+good job buddy
+explored: 519
+explored: 520
+good job buddy
+explored: 520
+good job buddy
+explored: 520
+explored: 521
+explored: 522
+good job buddy
+explored: 522
+good job buddy
+explored: 522
+good job buddy
+explored: 522
+good job buddy
+explored: 522
+good job buddy
+explored: 522
+good job buddy
+explored: 522
+explored: 523
+good job buddy
+explored: 523
+good job buddy
+explored: 523
+good job buddy
+explored: 523
+explored: 524
+good job buddy
+explored: 524
+good job buddy
+explored: 524
+explored: 525
+good job buddy
+explored: 525
+explored: 526
+good job buddy
+explored: 526
+explored: 527
+good job buddy
+explored: 527
+explored: 528
+good job buddy
+explored: 528
+explored: 529
+explored: 530
+explored: 531
+explored: 532
+explored: 533
+explored: 534
 suh dude where ya been?
+1 1
+printed path

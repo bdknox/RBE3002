@@ -29,8 +29,8 @@ class TurtleBot(object):
 		self.pose = Pose()
 		pos = Point()
 		quarter = Quaternion()
-		self.pose.position.x = 0
-		self.pose.position.y = 0
+		self.pose.position.x = 1
+		self.pose.position.y = 1
 		self.pose.position.z = 0
 
 		self.initPos = [0,0,0]
@@ -41,6 +41,7 @@ class TurtleBot(object):
 		self.isInit = False
 
 		self.pub = rospy.Publisher('cmd_vel_mux/input/teleop', Twist, None, queue_size=10)
+		# self.start_sub = rospy.Subscriber('start_pose', PoseStamped, self.setStart, queue_size=1)
 		self.goal_sub = rospy.Subscriber('goal_pose', PoseStamped, self.executeAStar, queue_size=1)
 		#self.bump_sub = rospy.Subscriber('mobile_base/events/bumper', BumperEvent, self.readBumper, queue_size=1)
 		self.odom_sub = rospy.Subscriber('/odom', Odometry, self.detOdometry)
