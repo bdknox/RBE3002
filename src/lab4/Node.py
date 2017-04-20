@@ -13,6 +13,7 @@ class Node(object):
 
 		for x in [-res,0,res]:
 			for y in [-res,0,res]:
+				time.sleep(.05)
 				pos = Point()
 				pos.x = self.coord.x + x
 				pos.y = self.coord.y + y
@@ -20,10 +21,19 @@ class Node(object):
 
 				newNode = Node(pos, self, self.dist + math.sqrt(x**2 + y**2))
 
-				if self.contains(pos):
+				if self.contains(pos, res):
 					pass
 				else:
 					myNeighbors.append(newNode)
 
-	def contains(self, pos):
-		return (abs(self.coord.x - pos.x) + abs(self.coord.y - pos.y) + abs(self.coord.z - pos.z) < .01)
+		# print 'neighbors:', myNeighbors
+
+		return myNeighbors
+
+	def contains(self, pos, res):
+		if self.coord.x + res/2 > pos.x and self.coord.x - res/2 < pos.x and self.coord.y + res/2 > pos.y and self.coord.y - res/2 < pos.y:
+			return True
+		elif not self.parent:
+			return False
+		else:
+			return self.parent.contains(pos, res)

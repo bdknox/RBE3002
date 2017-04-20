@@ -1,10 +1,10 @@
-#!/usr/bin/env python
-
-import rospy, tf, math
-from kobuki_msgs.msg import BumperEvent
+import rospy, tf, numpy, math, time
+import aStar
+import geometry_msgs
 from std_msgs.msg import String
+from geometry_msgs.msg import Twist, PoseStamped, Point, Quaternion, Pose
 from nav_msgs.msg import Odometry
-from geometry_msgs.msg import Twist, Pose, PoseStamped
+from kobuki_msgs.msg import BumperEvent
 from tf.transformations import euler_from_quaternion
 
 class TurtleBot(object):
@@ -28,9 +28,7 @@ class TurtleBot(object):
 
 		self.pose = Pose()
 		pos = Point()
-		quaternion = Quaternion()
-		self.pose.position = pos
-		self.pose.quaternion = quaternion
+		quarter = Quaternion()
 		self.pose.position.x = 0
 		self.pose.position.y = 0
 		self.pose.position.z = 0
@@ -39,6 +37,8 @@ class TurtleBot(object):
 		self.initOrient = [0,0,0,0]
 
 		self.hopeful = [0,0,0]
+
+		self.isInit = False
 
 		self.pub = rospy.Publisher('cmd_vel_mux/input/teleop', Twist, None, queue_size=10)
 		self.goal_sub = rospy.Subscriber('goal_pose', PoseStamped, self.executeAStar, queue_size=1)
@@ -52,8 +52,42 @@ class TurtleBot(object):
 	def executeAStar(self, msg):
 		astart = aStar.aStar()
 		time.sleep(.25)
-		astart.run(self.pose.position, msg.pose.position)
+		astart.justDoIt(self.pose.position, msg.pose.position)
 		path = astart.getPoints()
+
+	def detOdometry(self, msg):
+		if not self.isInit:
+			try:
+				(position, orientation) = odom_tfList.lookupTransform('map','base_footprint', rospy.Time(0)) #finds the position and oriention of two objects relative to each other (hint: this returns arrays, while Pose uses lists)
+
+				self.initPos = position
+				self.initOrient = orientation
+
+				roll, pitch, yaw = euler_from_quaternion(orientation)
+
+				self.initTheta = math.degrees(yaw)
+
+				self.isInit = True
+
+			except:
+				print 'Sorry ahso'
+
+
+		else:
+			(position, orientation) = odom_tfList.lookupTransform('map','base_footprint', rospy.Time(0)) #finds the position and oriention of two objects relative to each other (hint: this returns arrays, while Pose uses lists)
+
+			self.pose.position.x = position[0]
+			self.pose.position.y = position[1]
+			self.pose.position.z = position[2]
+
+			self.pose.orientation.x = orientation[0]
+			self.pose.orientation.y = orientation[1]
+			self.pose.orientation.z = orientation[2]
+			self.pose.orientation.w = orientation[3]
+			
+
+			roll, pitch, yaw = euler_from_quaternion(orientation)
+			self.theta = math.degrees(yaw)
 
 
 	#drive to a goal subscribed as /move_base_simple/goal
@@ -88,8 +122,6 @@ class TurtleBot(object):
 		publishTwist(0, 0)
 
 
-
-
 	#This function accepts a speed and a distance for the robot to move in a straight line
 	def driveStraight(self, speed, distance):
 		curPose = self.pose
@@ -97,7 +129,7 @@ class TurtleBot(object):
 		atTarget = False
 		while (not atTarget and not rospy.is_shutdown()):
 			curDist = math.sqrt((curPose.position.x - pose.position.x)**2 + (curPose.position.y - pose.position.y)**2)
-			scaler = (distance - curDist)*.1
+			scaler = .5/(abs(distance/2 - curDist) + .1)
 			print curDist
 			rospy.sleep(rospy.Duration(.01, 0))
 			if (curDist >= distance):
@@ -126,8 +158,6 @@ class TurtleBot(object):
 				publishTwist(0, .01*diff)
 			print theta
 		publishTwist(0, 0)
-
-
 
 
 	#This function works the same as rotate how ever it does not publish linear velocities.
@@ -166,42 +196,3 @@ class TurtleBot(object):
 	    msg.linear.x = linearVelocity
 	    msg.angular.z = angularVelocity
 	    pub.publish(msg)
-
-	def executeAStar(self):
-
-
-
-
-	# This is the program's main function
-	if __name__ == '__main__':
-	    # Change this node name to include your username
-	    rospy.init_node('bdknox_lab2_node')
-
-	    # These are global variables. Write "global <variable_name>" in any other function to gain access to these global variables 
-	    global pub
-	    global pose
-	    global odom_tf
-	    global odom_list
-	   
-	    # Replace the elipses '...' in the following lines to set up the publishers and subscribers the lab requires
-	    pub = rospy.Publisher('cmd_vel_mux/input/teleop', Twist, queue_size=5) # Publisher for commanding robot motion
-	    bumper_sub = rospy.Subscriber('/events/bumper', BumperEvent, readBumper, queue_size=1) # Callback function to handle bumper events
-
-	    # Use this object to get the robot's Odometry 
-	    odom_list = tf.TransformListener()
-	    
-	    # Use this command to make the program wait for some seconds
-
-	    spinWheels(1, 1, 1)
-	    
-
-	    #make the robot keep doing something...
-	    rospy.Timer(rospy.Duration(.01), timerCallback)
-	    rospy.sleep(rospy.Duration(1, 0))
-	    print "Starting Lab 2"
-
-	    driveStraight(5, 2)
-
-	    # Make the robot do stuff...
-	    print "Lab 2 complete!"
-
