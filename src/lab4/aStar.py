@@ -39,9 +39,11 @@ class aStar(object):
 
         while not self.frontier[0].contains(goalCoord, self.robot):
             next = self.frontier.pop(0)
-            if self.wasHere(next):
+            print 'explored:', self.explored
+            if self.wasHere(next.coord):
+                print 'good job buddy'
                 continue
-            self.explored.append(next)
+            self.explored.append(next.coord)
             if self.frontier:
                 self.pub.cells.remove(next.coord)
 
@@ -49,21 +51,20 @@ class aStar(object):
 
             for node in neighbors:
                 if self.isValid(node.coord):
-                    if not self.wasHere(node) or self.wasFound(node):
-                        if not self.frontier:
-                            self.frontier.append(node)
-                        else:
-                            node_cost = node.dist + self.hCost(node.coord, self.goalCoord) #self.goal?
-                            for i, j in enumerate(self.frontier):
-                                j_cost = j.dist + self.hCost(j.coord, self.goalCoord)
-                                if (node_cost < j_cost):
-                                    self.frontier.insert(i, node)
-                                    break
-                                elif (i == len(self.frontier)-1):
-                                    self.frontier.append(node)
-                                    break
+                    if not self.frontier:
+                        self.frontier.append(node)
+                    else:
+                        node_cost = node.dist + self.hCost(node.coord, self.goalCoord) #self.goal?
+                        for i, j in enumerate(self.frontier):
+                            j_cost = j.dist + self.hCost(j.coord, self.goalCoord)
+                            if (node_cost < j_cost):
+                                self.frontier.insert(i, node)
+                                break
+                            elif (i is len(self.frontier)-1):
+                                self.frontier.append(node)
+                                break
 
-                        self.pub.cells.append(node.coord)
+                    self.pub.cells.append(node.coord)
 
             self.frontier_pub.publish(self.pub)
         print 'suh dude where ya been?'
@@ -86,17 +87,11 @@ class aStar(object):
                         return False
         return True
 
-    def wasHere(self, node):
+    def wasHere(self, pos):
         for ex in self.explored:
-            if ex.contains(node.coord, self.resolution):
+            if pos.x >= ex.x and pos.x < (ex.x + self.resolution) and pos.y >= ex.y and pos.y < (ex.y + self.resolution):
                 return True
-            return False
-
-    def wasFound(self, node):
-        for f in self.frontier:
-            if f.contains(node.coord, self.resolution):
-                return True
-            return False
+        return False
 
     def hCost(self, pos, goal):
         return math.sqrt((pos.x - goal.x)**2 + (pos.y - goal.y)**2 + (pos.z - goal.z)**2)
