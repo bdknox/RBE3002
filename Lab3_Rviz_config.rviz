@@ -4,6 +4,8 @@ Panels:
     Name: Displays
     Property Tree Widget:
       Expanded:
+        - /Global Options1
+        - /Status1
         - /RobotModel1
         - /RobotModel1/Status1
         - /Frontier1
@@ -135,7 +137,7 @@ Visualization Manager:
     - Class: rviz/FocusCamera
     - Class: rviz/Measure
     - Class: rviz/SetInitialPose
-      Topic: /start_pose
+      Topic: /start_position
     - Class: rviz/SetGoal
       Topic: /goal_pose
     - Class: rviz/PublishPoint
@@ -145,22 +147,22 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 9.25019
+      Distance: 6.87941
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.06
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 2.59251
-        Y: 5.99081
-        Z: 9.33024
+        X: 6.03496
+        Y: 4.14858
+        Z: 9.31634
       Name: Current View
       Near Clip Distance: 0.01
-      Pitch: 1.5448
+      Pitch: 1.5098
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 4.70858
+      Yaw: 4.68858
     Saved: ~
 Window Geometry:
   Displays:
@@ -178,5 +180,5 @@ Window Geometry:
   Views:
     collapsed: true
   Width: 1316
-  X: 65
-  Y: 32
+  X: 100
+  Y: 27
