@@ -10,6 +10,8 @@ class aStar(object):
         self.resolution = .21
         self.robot = .21
 
+        self.points = []
+
         self.map_sub = rospy.Subscriber('map', OccupancyGrid, self.createMap, queue_size=1)
 
         self.frontier_pub = rospy.Publisher('frontier', GridCells, queue_size=10)
@@ -44,7 +46,7 @@ class aStar(object):
 
         self.shortpath_pub.publish(self.path)
 
-        while not self.frontier[0].contains(goalCoord, self.robot):
+        while not self.frontier[0].contains(goalCoord, self.map.info.resolution):
             next = self.frontier.pop(0)
             print 'explored:', len(self.explored)
             print 'frontier:', len(self.frontier)
@@ -139,12 +141,19 @@ class aStar(object):
 
         return self.path.cells
 
-        def wayPoints(self):
-            theta = -360
-            for idx, cell in enumerate(self.path.cells):
-                curTheta = theta
-                if idx < len(self.path.cells):
-                    nextCell = self.path.cells[idx + 1]
-                    newTheta = math.degrees(math.atan2((nextCell.y - cell.y)/(nextCell.x - cell.x)))
-                    if abs(newTheta - curTheta) > 3:
-                        self.points.insert
+    def wayPoints(self):
+        for idx, cell in enumerate(self.path.cells):
+            if idx < (len(self.path.cells) - 1):
+                nextCell = self.path.cells[idx + 1]
+                newTheta = math.degrees(math.atan2((nextCell.y - cell.y),(nextCell.x - cell.x)))
+                if len(self.points) == 0:
+                    self.points.append(cell)
+                    curTheta = newTheta
+                    print 'Start oriented at ', curTheta, ' degrees'
+                elif abs(newTheta - curTheta) > 3:
+                    self.points.append(cell)
+                    lastPoint = self.points[len(self.points) - 2]
+                    distFor = math.sqrt((cell.x - lastPoint.x)**2 + (cell.y - lastPoint.y)**2)
+                    print 'Drive Forward ', distFor, ' meters'
+                    print 'Turn ',  (newTheta - curTheta), ' degrees'
+                    curTheta = newTheta

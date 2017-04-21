@@ -56,6 +56,7 @@ class TurtleBot(object):
 		astart.justDoIt(self.pose.position, msg.pose.position)
 		self.path = astart.getPath()
 		print self.path
+		astart.wayPoints()
 
 	def detOdometry(self, msg):
 		if not self.isInit:
