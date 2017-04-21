@@ -6,11 +6,7 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
-        - /RobotModel1
         - /RobotModel1/Status1
-        - /Frontier1
-        - /Explored1
-        - /Shortest Path1
       Splitter Ratio: 0.5
     Tree Height: 328
   - Class: rviz/Selection
@@ -80,6 +76,13 @@ Visualization Manager:
       Value: true
     - Alpha: 1
       Class: rviz/GridCells
+      Color: 255; 85; 255
+      Enabled: true
+      Name: Shortest Path
+      Topic: /shortpath
+      Value: true
+    - Alpha: 1
+      Class: rviz/GridCells
       Color: 18; 255; 2
       Enabled: true
       Name: Frontier
@@ -91,13 +94,6 @@ Visualization Manager:
       Enabled: true
       Name: Explored
       Topic: /explored
-      Value: true
-    - Alpha: 1
-      Class: rviz/GridCells
-      Color: 255; 85; 255
-      Enabled: true
-      Name: Shortest Path
-      Topic: /shortpath
       Value: true
     - Alpha: 1
       Class: rviz/GridCells

@@ -13,6 +13,7 @@ class Node(object):
 
 		for x in [-res,0,res]:
 			for y in [-res,0,res]:
+				time.sleep(.001)
 				pos = Point()
 				pos.x = self.coord.x + x
 				pos.y = self.coord.y + y

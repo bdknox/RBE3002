@@ -29,9 +29,10 @@ class TurtleBot(object):
 		self.pose = Pose()
 		pos = Point()
 		quarter = Quaternion()
-		self.pose.position.x = 1
-		self.pose.position.y = 1
+		self.pose.position.x = 1.23
+		self.pose.position.y = 0.92
 		self.pose.position.z = 0
+		self.path = []
 
 		self.initPos = [0,0,0]
 		self.initOrient = [0,0,0,0]
@@ -41,7 +42,6 @@ class TurtleBot(object):
 		self.isInit = False
 
 		self.pub = rospy.Publisher('cmd_vel_mux/input/teleop', Twist, None, queue_size=10)
-		self.start_sub = rospy.Subscriber('start_position', PoseStamped, self.newStart, queue_size=1)
 		self.goal_sub = rospy.Subscriber('goal_pose', PoseStamped, self.executeAStar, queue_size=1)
 		#self.bump_sub = rospy.Subscriber('mobile_base/events/bumper', BumperEvent, self.readBumper, queue_size=1)
 		self.odom_sub = rospy.Subscriber('/odom', Odometry, self.detOdometry)
@@ -50,16 +50,12 @@ class TurtleBot(object):
 
 		print 'Completed making Turtlebot'
 
-	def newStart(self, msg):
-		self.pose.position = msg.pose.position
-		print 'set new start:', self.pose.postiion
-
 	def executeAStar(self, msg):
 		astart = aStar.aStar()
 		time.sleep(.25)
-		print self.pose.position
 		astart.justDoIt(self.pose.position, msg.pose.position)
-		path = astart.getPoints()
+		self.path = astart.getPath()
+		print self.path
 
 	def detOdometry(self, msg):
 		if not self.isInit:

@@ -47,22 +47,20 @@ class aStar(object):
         while not self.frontier[0].contains(goalCoord, self.robot):
             next = self.frontier.pop(0)
             print 'explored:', len(self.explored)
+            print 'frontier:', len(self.frontier)
             if self.wasHere(next.coord):
                 print 'good job buddy'
                 continue
             self.explored.append(next.coord)
             self.exp.cells.append(next.coord)
             if self.frontier:
+                print 'removed from frontier'
                 self.pub.cells.remove(next.coord)
 
             neighbors = next.getNeighbors(self.map.info.resolution, self.startNode)
 
             for node in neighbors:
-                time.sleep(.001)
                 if self.isValid(node.coord):
-                    if node.contains(goalCoord, self.robot):
-                        self.frontier.insert(0, node)
-                        break
                     if not self.wasHere(node.coord):
                         if not self.frontier:
                             self.frontier.append(node)
@@ -88,7 +86,7 @@ class aStar(object):
         
 
     def isValid(self, pos):
-        room = self.robot + self.resolution/2
+        room = self.robot + self.map.info.resolution/2
         # print pos.x
         for x in numpy.arange(pos.x - room, pos.x + room, self.map.info.resolution):
             for y in numpy.arange(pos.y - room, pos.y + room, self.map.info.resolution):
@@ -117,13 +115,13 @@ class aStar(object):
     def createMap(self, msg):
         self.map = msg
 
-    def getPoints(self):
+    def getPath(self):
         cell = self.frontier[0]
         # print self.exp.cells
         while cell is not self.startNode:
             time.sleep(.1)
             # print cell.coord.x, cell.coord.y
-            self.path.cells.append(cell.coord)
+            self.path.cells.insert(0, cell.coord)
             if self.wasHere(cell.coord):
                 self.exp.cells.remove(cell.coord)
             cell = cell.parent
@@ -131,9 +129,22 @@ class aStar(object):
             self.explored_pub.publish(self.exp)
         time.sleep(.1)
         print self.startCoord.x, self.startCoord.y
-        self.path.cells.append(self.startCoord)
+        self.path.cells.insert(0, self.startCoord)
         if self.wasHere(self.startCoord):
                 self.exp.cells.remove(self.startCoord)
         self.shortpath_pub.publish(self.path)
         self.explored_pub.publish(self.exp)
-        print 'printed path'
+        # print self.path.cells
+        # print 'printed path'
+
+        return self.path.cells
+
+        def wayPoints(self):
+            theta = -360
+            for idx, cell in enumerate(self.path.cells):
+                curTheta = theta
+                if idx < len(self.path.cells):
+                    nextCell = self.path.cells[idx + 1]
+                    newTheta = math.degrees(math.atan2((nextCell.y - cell.y)/(nextCell.x - cell.x)))
+                    if abs(newTheta - curTheta) > 3:
+                        self.points.insert
