@@ -17,7 +17,7 @@ class aStar(object):
         self.frontier_pub = rospy.Publisher('frontier', GridCells, queue_size=10)
         self.explored_pub = rospy.Publisher('explored', GridCells, queue_size=10)
         self.shortpath_pub  = rospy.Publisher('shortpath', GridCells, queue_size=10)
-        #obstacles_pub = rospy.Publisher('obstacles', GridCells, queue_size=10)
+        self.obstacles_pub = rospy.Publisher('obstacles', GridCells, queue_size=10)
         #unexplored_pub = rospy.Publisher('unexplored', GridCells, queue_size=10)
 
     def justDoIt(self, startCoord, goalCoord):
@@ -44,33 +44,34 @@ class aStar(object):
         self.path.cell_width = self.map.info.resolution
         self.path.cell_height = self.map.info.resolution
 
+        self.obs = GridCells()
+        self.obs.header = self.map.header
+        self.obs.cell_width = self.map.info.resolution
+        self.obs.cell_height = self.map.info.resolution
+
         self.shortpath_pub.publish(self.path)
+        self.pub.cells.append(self.startCoord)
+        self.frontier_pub.publish(self.pub)
 
         while not self.frontier[0].contains(goalCoord, self.map.info.resolution):
             next = self.frontier.pop(0)
-            print 'explored:', len(self.explored)
-            print 'frontier:', len(self.frontier)
+            self.pub.cells.remove(next.coord)
             if self.wasHere(next.coord):
-                print 'good job buddy'
                 continue
             self.explored.append(next.coord)
             self.exp.cells.append(next.coord)
-            if self.frontier:
-                print 'removed from frontier'
-                self.pub.cells.remove(next.coord)
 
             neighbors = next.getNeighbors(self.map.info.resolution, self.startNode)
 
             for node in neighbors:
                 if self.isValid(node.coord):
                     if not self.wasHere(node.coord):
-                        if not self.frontier:
+                        if (len(self.frontier) == 0):
                             self.frontier.append(node)
                         else:
                             node_cost = node.dist + self.hCost(node.coord, self.goalCoord) #self.goal?
                             for i, j in enumerate(self.frontier):
                                 j_cost = j.dist + self.hCost(j.coord, self.goalCoord)
-                                #if (node_cost < j_cost):
                                 if ((node_cost - .15 < j_cost) and ((node_cost - node.dist) < (j_cost - j.dist))):
                                     self.frontier.insert(i, node)
                                     break
@@ -82,9 +83,13 @@ class aStar(object):
 
             self.frontier_pub.publish(self.pub)
             self.explored_pub.publish(self.exp)
+            self.obstacles_pub.publish(self.obs)
+        self.frontier_pub.publish(self.pub)
+        self.explored_pub.publish(self.exp)
+        time.sleep(.5)
+        print 'frontier:', len(self.pub.cells)
+        print 'explored:', len(self.exp.cells)
         print 'suh dude where ya been?'
-        # for pnt in self.explored:
-        #     self.exp.cells.append(pnt)
         
 
     def isValid(self, pos):
@@ -100,6 +105,7 @@ class aStar(object):
                     # print indx
                     try:
                         if self.map.data[indx] is 100:
+                            self.obs.cells.append(pos)
                             return False
                     except:
                         return False
@@ -111,6 +117,12 @@ class aStar(object):
                 return True
         return False
 
+    def wasFound(self, pos):
+        for fro in self.frontier:
+            if pos.x >= fro.coord.x and pos.x < (fro.coord.x + self.resolution) and pos.y >= fro.coord.y and pos.y < (fro.coord.y + self.resolution):
+                return True
+        return False
+
     def hCost(self, pos, goal):
         return math.sqrt((pos.x - goal.x)**2 + (pos.y - goal.y)**2 + (pos.z - goal.z)**2)
 
@@ -119,6 +131,8 @@ class aStar(object):
 
     def getPath(self):
         cell = self.frontier[0]
+        self.exp.cells.append(cell.coord)
+        self.explored_pub.publish(self.exp)
         # print self.exp.cells
         while cell is not self.startNode:
             time.sleep(.1)
@@ -149,11 +163,19 @@ class aStar(object):
                 if len(self.points) == 0:
                     self.points.append(cell)
                     curTheta = newTheta
-                    print 'Start oriented at ', curTheta, ' degrees'
+                    print 'Start oriented at', curTheta, 'degrees'
                 elif abs(newTheta - curTheta) > 3:
                     self.points.append(cell)
                     lastPoint = self.points[len(self.points) - 2]
                     distFor = math.sqrt((cell.x - lastPoint.x)**2 + (cell.y - lastPoint.y)**2)
-                    print 'Drive Forward ', distFor, ' meters'
-                    print 'Turn ',  (newTheta - curTheta), ' degrees'
+                    print 'Drive Forward', distFor, 'meters'
+                    if abs(newTheta - curTheta) < 180:
+                        print 'At Point:', cell.x, cell.y, 'Turn',  (newTheta - curTheta), 'degrees'
+                    else:
+                        print 'At Point:', cell.x, cell.y, 'Turn',  (newTheta + curTheta), 'degrees'
                     curTheta = newTheta
+            else:
+                self.points.append(cell)
+                lastPoint = self.points[len(self.points) - 2]
+                distFor = math.sqrt((cell.x - lastPoint.x)**2 + (cell.y - lastPoint.y)**2)
+                print 'Drive Forward', distFor, 'meters, congratulations you did it my man'

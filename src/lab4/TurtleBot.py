@@ -131,7 +131,7 @@ class TurtleBot(object):
 
 		atTarget = False
 		while (not atTarget and not rospy.is_shutdown()):
-			curDist = math.sqrt((curPose.position.x - pose.position.x)**2 + (curPose.position.y - pose.position.y)**2)
+			curDist = math.sqrt((curPose.position.x - self.pose.position.x)**2 + (curPose.position.y - self.pose.position.y)**2)
 			scaler = .5/(abs(distance/2 - curDist) + .1)
 			print curDist
 			rospy.sleep(rospy.Duration(.01, 0))
@@ -146,14 +146,11 @@ class TurtleBot(object):
 		return True
 
 	#Accepts an angle and makes the robot rotate around it.
-	def rotate(angle):
-		global pub
-		global pose
-		global theta
+	def rotate(self, angle):
 
-		goalAng = theta - angle
+		goalAng = self.theta + angle
 
-		while not (angle - .05 <= theta <= angle + .05):
+		while not (goalAngle - .05 <= self.theta <= goalAngle + .05):
 			diff = abs(theta - angle)
 			if goalAng >= 0:
 				publishTwist(0, -.01*diff)

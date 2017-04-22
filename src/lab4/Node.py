@@ -10,7 +10,6 @@ class Node(object):
 
 	def getNeighbors(self, res, node):
 		myNeighbors =[]
-
 		for x in [-res,0,res]:
 			for y in [-res,0,res]:
 				time.sleep(.001)
