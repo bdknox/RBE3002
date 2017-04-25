@@ -29,21 +29,25 @@ class aStar(object):
         self.goalCoord = goalCoord
         print goalCoord
 
+        # frontier publisher
         self.pub = GridCells()
         self.pub.header = self.map.header
         self.pub.cell_width = self.map.info.resolution
         self.pub.cell_height = self.map.info.resolution
 
+        # explored publisher
         self.exp = GridCells()
         self.exp.header = self.map.header
         self.exp.cell_width = self.map.info.resolution
         self.exp.cell_height = self.map.info.resolution
 
+        # path publisher
         self.path = GridCells()
         self.path.header = self.map.header
         self.path.cell_width = self.map.info.resolution
         self.path.cell_height = self.map.info.resolution
 
+        # obstacles publisher
         self.obs = GridCells()
         self.obs.header = self.map.header
         self.obs.cell_width = self.map.info.resolution
@@ -163,19 +167,21 @@ class aStar(object):
                 if len(self.points) == 0:
                     self.points.append(cell)
                     curTheta = newTheta
-                    print 'Start oriented at', curTheta, 'degrees'
-                elif abs(newTheta - curTheta) > 3:
+                    # print 'Start oriented at', curTheta, 'degrees'
+                elif abs(newTheta - curTheta) > .5:
                     self.points.append(cell)
-                    lastPoint = self.points[len(self.points) - 2]
-                    distFor = math.sqrt((cell.x - lastPoint.x)**2 + (cell.y - lastPoint.y)**2)
-                    print 'Drive Forward', distFor, 'meters'
-                    if abs(newTheta - curTheta) < 180:
-                        print 'At Point:', cell.x, cell.y, 'Turn',  (newTheta - curTheta), 'degrees'
-                    else:
-                        print 'At Point:', cell.x, cell.y, 'Turn',  (newTheta + curTheta), 'degrees'
+                    # lastPoint = self.points[len(self.points) - 2]
+                    # distFor = math.sqrt((cell.x - lastPoint.x)**2 + (cell.y - lastPoint.y)**2)
+                    # print 'Drive Forward', distFor, 'meters'
+                    # if abs(newTheta - curTheta) < 180:
+                    #     print 'At Point:', cell.x, cell.y, 'Turn',  (newTheta - curTheta), 'degrees'
+                    # else:
+                    #     print 'At Point:', cell.x, cell.y, 'Turn',  (newTheta + curTheta), 'degrees'
                     curTheta = newTheta
             else:
                 self.points.append(cell)
                 lastPoint = self.points[len(self.points) - 2]
                 distFor = math.sqrt((cell.x - lastPoint.x)**2 + (cell.y - lastPoint.y)**2)
                 print 'Drive Forward', distFor, 'meters, congratulations you did it my man'
+
+        return self.points
